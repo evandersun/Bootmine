@@ -246,10 +246,9 @@
     UIButtonConfiguration *config = [UIButtonConfiguration filledButtonConfiguration];
     config.background.backgroundColor = [DOThemeManager menuColorWithAlpha:1.0];
     config.background.cornerRadius = 14;
-    config.background.cornerStyle = UIButtonConfigurationCornerStyleFixed;
     config.baseForegroundColor = [UIColor whiteColor];
     config.imagePadding = 8;
-    config.imagePlacement = NSDirectionalRectPlacementTop;
+    config.imagePlacement = NSDirectionalRectEdgeTop;
     config.titleLineBreakMode = NSLineBreakByTruncatingTail;
 
     UIButton *button = [UIButton buttonWithConfiguration:config primaryAction:action];
